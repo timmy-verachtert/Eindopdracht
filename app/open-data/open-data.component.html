@@ -1,0 +1,7 @@
+<h3>Hieronder krijg je een oplijsting van alle parken in en rond Antwerpen:</h3>
+<ul *ngFor="let data of OpenData">
+    <li>
+        {{data.attributes.NAAM}}: {{data.attributes.STRAATNAAM}}, 
+        {{data.attributes.POSTCODE}} {{data.attributes.DISTRICT}} 
+    </li>
+</ul>

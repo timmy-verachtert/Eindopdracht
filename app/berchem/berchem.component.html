@@ -1,0 +1,7 @@
+<ul *ngFor="let data of OpenData">
+    <li *ngIf = "data.attributes.DISTRICT=='BERCHEM'">
+        {{data.attributes.NAAM}}: {{data.attributes.STRAATNAAM}}, 
+        {{data.attributes.POSTCODE}} {{data.attributes.DISTRICT}} 
+        <h5>Lat: {{data.attributes.Shape_Length}} Long: {{data.attributes.Shape_Area}}</h5>
+    </li>
+</ul>
